@@ -10,7 +10,7 @@ const logs = ["warn-unknown-mac.log", "mac-activity.log", "error.log"];
 const nets = networkInterfaces();
 
 const formatMac = (mac = "") =>
-  mac
+  `${mac}`
     .split(":")
     .map((item) => (!isNaN(item) ? Number(item) : item.toLowerCase()))
     .join(":");
