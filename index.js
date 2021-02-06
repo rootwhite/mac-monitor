@@ -77,5 +77,4 @@ http.createServer(app).listen(process.env.SERVER_PORT || 3030, function () {
       `ip: ${ip}`
     );
   });
-  console.log('path.join(__dirname, "log")', path.join(__dirname, "log"));
 });
